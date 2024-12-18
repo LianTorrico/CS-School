@@ -1,0 +1,7 @@
+C:\Users\lian.torrico\source\repos\PariDispari\bin\Debug\PariDispari.exe.config
+C:\Users\lian.torrico\source\repos\PariDispari\bin\Debug\PariDispari.exe
+C:\Users\lian.torrico\source\repos\PariDispari\bin\Debug\PariDispari.pdb
+C:\Users\lian.torrico\source\repos\PariDispari\obj\Debug\PariDispari.csproj.AssemblyReference.cache
+C:\Users\lian.torrico\source\repos\PariDispari\obj\Debug\PariDispari.csproj.CoreCompileInputs.cache
+C:\Users\lian.torrico\source\repos\PariDispari\obj\Debug\PariDispari.exe
+C:\Users\lian.torrico\source\repos\PariDispari\obj\Debug\PariDispari.pdb
