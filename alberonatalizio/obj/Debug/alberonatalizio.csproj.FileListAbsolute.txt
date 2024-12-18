@@ -1,0 +1,7 @@
+C:\Users\lian.torrico\source\repos\alberonatalizio\bin\Debug\alberonatalizio.exe.config
+C:\Users\lian.torrico\source\repos\alberonatalizio\bin\Debug\alberonatalizio.exe
+C:\Users\lian.torrico\source\repos\alberonatalizio\bin\Debug\alberonatalizio.pdb
+C:\Users\lian.torrico\source\repos\alberonatalizio\obj\Debug\alberonatalizio.csproj.AssemblyReference.cache
+C:\Users\lian.torrico\source\repos\alberonatalizio\obj\Debug\alberonatalizio.csproj.CoreCompileInputs.cache
+C:\Users\lian.torrico\source\repos\alberonatalizio\obj\Debug\alberonatalizio.exe
+C:\Users\lian.torrico\source\repos\alberonatalizio\obj\Debug\alberonatalizio.pdb
