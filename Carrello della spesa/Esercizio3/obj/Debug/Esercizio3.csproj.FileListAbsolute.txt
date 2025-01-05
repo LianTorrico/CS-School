@@ -1,0 +1,7 @@
+C:\Users\ruogu\source\repos\Esercizio3\Esercizio3\obj\Debug\Esercizio3.csproj.AssemblyReference.cache
+C:\Users\ruogu\source\repos\Esercizio3\Esercizio3\obj\Debug\Esercizio3.csproj.CoreCompileInputs.cache
+C:\Users\ruogu\source\repos\Esercizio3\Esercizio3\bin\Debug\Esercizio3.exe.config
+C:\Users\ruogu\source\repos\Esercizio3\Esercizio3\bin\Debug\Esercizio3.exe
+C:\Users\ruogu\source\repos\Esercizio3\Esercizio3\bin\Debug\Esercizio3.pdb
+C:\Users\ruogu\source\repos\Esercizio3\Esercizio3\obj\Debug\Esercizio3.exe
+C:\Users\ruogu\source\repos\Esercizio3\Esercizio3\obj\Debug\Esercizio3.pdb
