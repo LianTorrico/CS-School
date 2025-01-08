@@ -1,0 +1,7 @@
+C:\Users\lian.torrico\source\repos\calcolatrice\bin\Debug\calcolatrice.exe.config
+C:\Users\lian.torrico\source\repos\calcolatrice\bin\Debug\calcolatrice.exe
+C:\Users\lian.torrico\source\repos\calcolatrice\bin\Debug\calcolatrice.pdb
+C:\Users\lian.torrico\source\repos\calcolatrice\obj\Debug\calcolatrice.csproj.AssemblyReference.cache
+C:\Users\lian.torrico\source\repos\calcolatrice\obj\Debug\calcolatrice.csproj.CoreCompileInputs.cache
+C:\Users\lian.torrico\source\repos\calcolatrice\obj\Debug\calcolatrice.exe
+C:\Users\lian.torrico\source\repos\calcolatrice\obj\Debug\calcolatrice.pdb
