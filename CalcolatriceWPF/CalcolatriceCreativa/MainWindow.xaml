@@ -1,0 +1,39 @@
+﻿<Window x:Class="CalcolatriceCreativa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcolatriceCreativa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="545" Width="350">
+    <Grid>
+
+        <UniformGrid Grid.Row="1" Columns="4" Margin="5,204,5,5">
+            <Button x:Name="BTN_PERCENT" Content="%" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_DELETEALL" Content="CE" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_DELETE" Content="C" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_CANC" Content="CANC" FontFamily="Verdana" FontWeight="ExtraBold"/>
+            <Button x:Name="BTN_7" Content="7" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_7_Click"/>
+            <Button x:Name="BTN_8" Content="8" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_8_Click"/>
+            <Button x:Name="BTN_9" Content="9" Click="BTN_9_Click" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_MULTI" Content="X" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_4" Content="4" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_4_Click"/>
+            <Button x:Name="BTN_5" Content="5" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_5_Click"/>
+            <Button x:Name="BTN_6" Content="6" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_6_Click"/>
+            <Button x:Name="BTN_MINUS" Content="-" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_1" Content="1" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_1_Click"/>
+            <Button x:Name="BTN_2" Content="2" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_2_Click"/>
+            <Button x:Name="BTN_3" Content="3" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_3_Click"/>
+            <Button x:Name="BTN_PLUS" Content="+" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_PLUS_Click"/>
+            <Button x:Name="BTN_NEGATE" Content="+/-" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_0" Content="0" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18" Click="BTN_0_Click"/>
+            <Button x:Name="BTN_DOT" Content="." FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+            <Button x:Name="BTN_EQU" Content="=" FontFamily="Verdana" FontWeight="ExtraBold" FontSize="18"/>
+        </UniformGrid>
+        <TextBlock x:Name="TXB_equation" Text="0" TextAlignment="Right" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="330" Height="67"  FontFamily="Verdana" FontWeight="Bold" LineHeight="12"/>
+
+
+
+
+    </Grid>
+</Window>
