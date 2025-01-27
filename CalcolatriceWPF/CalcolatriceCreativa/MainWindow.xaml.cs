@@ -76,7 +76,7 @@ namespace CalcolatriceCreativa
             TXB_equation.Text = equation;
 
         }
-
+        /* OPERATORI */
         private void BTN_PLUS_Click(object sender, RoutedEventArgs e)
         {
             char equationhelper = TXB_equation.Text[TXB_equation.Text.Length-1];
@@ -153,16 +153,31 @@ namespace CalcolatriceCreativa
 
         private void BTN_PERCENT_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("WIP");
+            MessageBox.Show("Non ho voglia di programmarlo sinceramente");
         }
 
         private void BTN_EQU_Click(object sender, RoutedEventArgs e)
         {
+            if (equation[equation.Length-1] =='+' && equation[equation.Length-1]=='-' && equation[equation.Length - 1] == '.')
+            {
+                equation += "0";
+            }
+            else if (equation[equation.Length - 1] == '*')
+            {
+                equation += "1";
+            }
+            try
+            {
+                var result = new DataTable().Compute(equation, null);
 
-            var result = new DataTable().Compute(equation, null);
-            double resolver = Convert.ToDouble(result);
-            resolver += 0;
-            TXB_equation.Text = Convert.ToString(resolver);
+                double resolver = Convert.ToDouble(result);
+                resolver += 0;
+                TXB_equation.Text = Convert.ToString(resolver);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

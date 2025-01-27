@@ -9,7 +9,7 @@
     <Grid>
 
         <UniformGrid Grid.Row="1" Columns="4" Margin="5,204,5,5">
-            <Button x:Name="BTN_PERCENT" Content="%" FontFamily="Verdana" FontSize="18" Click="BTN_PERCENT_Click" FontWeight="Bold" Margin="0,2,2,0" Background="#FFF6F6F6" BorderBrush="#FFCCCCCC">
+            <Button x:Name="BTN_PERCENT" Content="%" FontFamily="Verdana" FontSize="18" Click="BTN_PERCENT_Click" FontWeight="Bold" Margin="0,2,2,0" Background="#FFF6F6F6" BorderBrush="#FFCCCCCC" Height="62" VerticalAlignment="Top">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
@@ -151,6 +151,7 @@
             </Button>
         </UniformGrid>
         <TextBlock x:Name="TXB_equation" Text="0" TextAlignment="Right" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="330" Height="67"  FontFamily="Verdana" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Standard" HorizontalAlignment="Left" Margin="40,5,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontWeight="Medium" FontSize="22" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="40" Width="135"/>
 
 
 
