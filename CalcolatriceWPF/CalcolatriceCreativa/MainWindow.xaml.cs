@@ -25,96 +25,83 @@ namespace CalcolatriceCreativa
             TXB_equation.Text = equation;
         }
         /* NUMERI */
+        public void EquationHandlerNum(char num)
+        {
+            equation += num;
+            TXB_equation.Text=equation;
+        }
         public void BTN_1_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation+"1";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('1');
         }
         public void BTN_2_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "2";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('2');
         }
         public void BTN_3_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "3";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('3');
         }
         public void BTN_4_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "4";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('4');
         }
         public void BTN_5_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "5";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('5');
         }
         public void BTN_6_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "6";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('6');
         }
         public void BTN_7_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "7";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('7');
         }
         public void BTN_8_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "8";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('8');
         }
         public void BTN_9_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "9";
-            TXB_equation.Text = equation;
+            EquationHandlerNum('9');
         }
         public void BTN_0_Click(object sender, RoutedEventArgs e)
         {
-            equation = equation + "0";
-            TXB_equation.Text = equation;
-
+            EquationHandlerNum('0');
         }
         /* OPERATORI */
-        private void BTN_PLUS_Click(object sender, RoutedEventArgs e)
-        {
-            char equationhelper = TXB_equation.Text[TXB_equation.Text.Length-1];
+        public void EquationHandlerOp(char op) {
+            char equationhelper = TXB_equation.Text[TXB_equation.Text.Length - 1];
             if (equationhelper != '+' && equationhelper != '-' && equationhelper != '*' && equationhelper != '.')
             {
-                equation = equation + "+";
+                equation = equation + op;
                 TXB_equation.Text = equation;
             }
+        }
+        public void EquationDeleter()
+        {
+            equation = "";
+            TXB_equation.Text=equation;
+        }
+        private void BTN_PLUS_Click(object sender, RoutedEventArgs e)
+        {
+            EquationHandlerOp('+');
         }
 
         private void BTN_MINUS_Click(object sender, RoutedEventArgs e)
         {
-            char equationhelper = TXB_equation.Text[TXB_equation.Text.Length - 1];
-            if (equationhelper != '+' && equationhelper != '-' && equationhelper != '*' && equationhelper != '.')
-            {
-                equation = equation + "-";
-                TXB_equation.Text = equation;
-            }
+            EquationHandlerOp('-');
         }
 
         private void BTN_MULTI_Click(object sender, RoutedEventArgs e)
         {
-            char equationhelper = TXB_equation.Text[TXB_equation.Text.Length - 1];
-            if (equationhelper != '+' && equationhelper != '-' && equationhelper != '*' && equationhelper != '.')
-            {
-                equation = equation + "*";
-                TXB_equation.Text = equation;
-            }
+            EquationHandlerOp('*');
         }
 
         private void BTN_DOT_Click(object sender, RoutedEventArgs e)
         {
-            char equationhelper = TXB_equation.Text[TXB_equation.Text.Length - 1];
-            if (equationhelper != '+' && equationhelper != '-' && equationhelper != '*' && equationhelper != '.')
-            {
-                equation = equation + ".";
-                TXB_equation.Text = equation;
-            }
+            EquationHandlerOp('.');
         }
 
         private void BTN_NEGATE_Click(object sender, RoutedEventArgs e)
@@ -141,14 +128,12 @@ namespace CalcolatriceCreativa
 
         private void BTN_DELETE_Click(object sender, RoutedEventArgs e)
         {
-            equation = "";
-            TXB_equation.Text = equation;
+            EquationDeleter();
         }
 
         private void BTN_DELETEALL_Click(object sender, RoutedEventArgs e)
         {
-            equation = "";
-            TXB_equation.Text = equation;
+            EquationDeleter();
         }
 
         private void BTN_PERCENT_Click(object sender, RoutedEventArgs e)
