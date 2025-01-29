@@ -3,7 +3,7 @@
 This repository contains some of the programs that i did in class.
 Some of them might be outdated or incomplete.
 
-## Come si installa? 🧰🛠️
+## How to install? 🧰🛠️
 ### 1. GitHub Clone 🤖🗃️
 ***!This method requires Git installed in your computer!***
 
