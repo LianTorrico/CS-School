@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lian.torrico\\Desktop\\cscodes\\CS-School\\CalcolatriceWPF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B52EEE2E-309C-4268-BA45-0A9F1CFB8E56}|CalcolatriceCreativa\\CalcolatriceCreativa.csproj|c:\\users\\lian.torrico\\desktop\\cscodes\\cs-school\\calcolatricewpf\\calcolatricecreativa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B52EEE2E-309C-4268-BA45-0A9F1CFB8E56}|CalcolatriceCreativa\\CalcolatriceCreativa.csproj|solutionrelative:calcolatricecreativa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B52EEE2E-309C-4268-BA45-0A9F1CFB8E56}|CalcolatriceCreativa\\CalcolatriceCreativa.csproj|c:\\users\\lian.torrico\\desktop\\cscodes\\cs-school\\calcolatricewpf\\calcolatricecreativa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B52EEE2E-309C-4268-BA45-0A9F1CFB8E56}|CalcolatriceCreativa\\CalcolatriceCreativa.csproj|solutionrelative:calcolatricecreativa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lian.torrico\\Desktop\\cscodes\\CS-School\\CalcolatriceWPF\\CalcolatriceCreativa\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CalcolatriceCreativa\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lian.torrico\\Desktop\\cscodes\\CS-School\\CalcolatriceWPF\\CalcolatriceCreativa\\MainWindow.xaml",
+              "RelativeToolTip": "CalcolatriceCreativa\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-29T09:08:00Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lian.torrico\\Desktop\\cscodes\\CS-School\\CalcolatriceWPF\\CalcolatriceCreativa\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CalcolatriceCreativa\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\lian.torrico\\Desktop\\cscodes\\CS-School\\CalcolatriceWPF\\CalcolatriceCreativa\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CalcolatriceCreativa\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T09:07:55.026Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

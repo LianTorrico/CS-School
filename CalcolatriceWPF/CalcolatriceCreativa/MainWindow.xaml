@@ -5,10 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalcolatriceCreativa"
         mc:Ignorable="d"
-        Title="Calcolatrice" Height="545" Width="350" Background="#FFF3F3F3">
-    <Grid>
+        Title="Calcolatrice" Height="545" Width="350" Background="#FFF3F3F3" BorderBrush="White">
 
-        <UniformGrid Grid.Row="1" Columns="4" Margin="5,204,5,5">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="341*"/>
+        </Grid.ColumnDefinitions>
+
+        <UniformGrid Columns="4" Margin="5,204,5,5" Grid.ColumnSpan="2">
             <Button x:Name="BTN_PERCENT" Content="%" FontFamily="Verdana" FontSize="18" Click="BTN_PERCENT_Click" FontWeight="Bold" Margin="0,2,2,0" Background="#FFF6F6F6" BorderBrush="#FFCCCCCC" Height="62" VerticalAlignment="Top">
                 <Button.Resources>
                     <Style TargetType="Border">
@@ -150,11 +155,16 @@
                 </Button.Resources>
             </Button>
         </UniformGrid>
-        <TextBlock x:Name="TXB_equation" Text="0" TextAlignment="Right" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="330" Height="67"  FontFamily="Verdana" FontSize="36" FontWeight="Bold"/>
-        <Label Content="Standard" HorizontalAlignment="Left" Margin="40,5,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontWeight="Medium" FontSize="22" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="40" Width="135"/>
+        <TextBlock x:Name="TXB_equation" Text="0" TextAlignment="Right" Margin="0,99,20,0" VerticalAlignment="Top" Height="67"  FontFamily="Verdana" FontSize="36" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label Content="Standard" HorizontalAlignment="Left" Margin="31,5,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontWeight="Medium" FontSize="22" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="40" Width="135" Grid.Column="1"/>
 
 
 
 
     </Grid>
+    <Window.Resources>
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="1"></Setter>
+        </Style>
+    </Window.Resources>
 </Window>
