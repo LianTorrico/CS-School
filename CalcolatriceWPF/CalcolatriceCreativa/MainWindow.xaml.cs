@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using System.Text;
 using System.Windows;
+using System.Diagnostics; //Per la pagina web
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -42,7 +43,15 @@ namespace CalcolatriceCreativa
             {
                 MessageBox.Show(Name);
                 UpdateLBL();
-                BTN = true;
+            }
+        }
+        public void Redirect(string equation)
+        {
+            if (equation == "20012025")
+            {
+                MessageBox.Show("Numero segreto inserito! ora mi dia una stella su GitHub perfavore ^-^");
+                string url = "https://github.com/LianTorrico/CS-School";
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true}); //Apre una pagina web con il github, mi metta una stella se sta leggendo questo commento
             }
         }
         /* NUMERI */
@@ -56,50 +65,61 @@ namespace CalcolatriceCreativa
         {
             EquationHandlerNum('1');
             PersonFound(BTN1 , "Eduardo Garcia Lòpez");
+            BTN1 = true;
+            Redirect(equation);
         }
         public void BTN_2_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('2');
             PersonFound(BTN2, "Nicky Kiwi");
             BTN2 = true;
+            Redirect(equation);
         }
         public void BTN_3_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('3');
             PersonFound(BTN3, "Carlo Carota");
             BTN3 = true;
+            Redirect(equation);
         }
         public void BTN_4_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('4');
             PersonFound(BTN4, "Lupo Lucio");
             BTN4 = true;
+            Redirect(equation);
         }
         public void BTN_5_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('5');
             PersonFound(BTN5, "Paolo Prugna");
             BTN5 = true;
+            Redirect(equation);
         }
         public void BTN_6_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('6');
+            Redirect(equation);
         }
         public void BTN_7_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('7');
+            Redirect(equation);
         }
         public void BTN_8_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('8');
+            Redirect(equation);
         }
         public void BTN_9_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('9');
+            Redirect(equation);
         }
         public void BTN_0_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('0');
+            Redirect(equation);
         }
         /* OPERATORI */
         public void EquationHandlerOp(char op) { //Si occupa degli operandi
