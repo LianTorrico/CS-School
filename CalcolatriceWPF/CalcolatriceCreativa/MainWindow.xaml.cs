@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using System.Text;
 using System.Windows;
+using System.Diagnostics; //Per la pagina web
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -18,60 +19,110 @@ namespace CalcolatriceCreativa
     public partial class MainWindow : Window
     {
         public string equation = "";
+        public bool BTN1 = false; //bool di bottoni, per assicurarsi che l'operazione venga eseguita solo la prima volta
+        public bool BTN2 = false;
+        public bool BTN3 = false;
+        public bool BTN4 = false;
+        public bool BTN5 = false;
+        public int pplcounter = 0; //Conteggio persone
         public MainWindow()
         {
 
             InitializeComponent();
             TXB_equation.Text = equation;
+            LBL_ppl.Content = "Persone Trovate: " + Convert.ToString(pplcounter); //Conteggio persone
+        }
+        public void UpdateLBL()
+        {
+            pplcounter++;
+            LBL_ppl.Content = "Persone Trovate: " + Convert.ToString(pplcounter); //Aggiornamento conteggio
+        }
+        public void PersonFound(bool BTN,string Name) //Aggiunta persone con aggiornamento integrato
+        {
+            if (BTN == false)
+            {
+                MessageBox.Show(Name);
+                UpdateLBL();
+            }
+        }
+        public void Redirect(string equation)
+        {
+            if (equation == "20012025")
+            {
+                MessageBox.Show("Numero segreto inserito! ora mi dia una stella su GitHub perfavore ^-^");
+                string url = "https://github.com/LianTorrico/CS-School";
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true}); //Apre una pagina web con il github, mi metta una stella se sta leggendo questo commento
+            }
         }
         /* NUMERI */
-        public void EquationHandlerNum(char num)
+        public void EquationHandlerNum(char num) //Equazione
         {
             equation += num;
             TXB_equation.Text=equation;
         }
+        //BOTTONI
         public void BTN_1_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('1');
+            PersonFound(BTN1 , "Eduardo Garcia Lòpez");
+            BTN1 = true;
+            Redirect(equation);
         }
         public void BTN_2_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('2');
+            PersonFound(BTN2, "Nicky Kiwi");
+            BTN2 = true;
+            Redirect(equation);
         }
         public void BTN_3_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('3');
+            PersonFound(BTN3, "Carlo Carota");
+            BTN3 = true;
+            Redirect(equation);
         }
         public void BTN_4_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('4');
+            PersonFound(BTN4, "Lupo Lucio");
+            BTN4 = true;
+            Redirect(equation);
         }
         public void BTN_5_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('5');
+            PersonFound(BTN5, "Paolo Prugna");
+            BTN5 = true;
+            Redirect(equation);
         }
         public void BTN_6_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('6');
+            Redirect(equation);
         }
         public void BTN_7_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('7');
+            Redirect(equation);
         }
         public void BTN_8_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('8');
+            Redirect(equation);
         }
         public void BTN_9_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('9');
+            Redirect(equation);
         }
         public void BTN_0_Click(object sender, RoutedEventArgs e)
         {
             EquationHandlerNum('0');
+            Redirect(equation);
         }
         /* OPERATORI */
-        public void EquationHandlerOp(char op) {
+        public void EquationHandlerOp(char op) { //Si occupa degli operandi
             char equationhelper = TXB_equation.Text[TXB_equation.Text.Length - 1];
             if (equationhelper != '+' && equationhelper != '-' && equationhelper != '*' && equationhelper != '.')
             {
@@ -79,7 +130,7 @@ namespace CalcolatriceCreativa
                 TXB_equation.Text = equation;
             }
         }
-        public void EquationDeleter()
+        public void EquationDeleter() //Rimuove il contenuto dell'equazione
         {
             equation = "";
             TXB_equation.Text=equation;
@@ -104,7 +155,7 @@ namespace CalcolatriceCreativa
             EquationHandlerOp('.');
         }
 
-        private void BTN_NEGATE_Click(object sender, RoutedEventArgs e)
+        private void BTN_NEGATE_Click(object sender, RoutedEventArgs e) //Nega l'ultimo numero inserito dopo dell'operando
         {
             var parts = equation.Split(new char[] { '+', '-' }, StringSplitOptions.RemoveEmptyEntries);
             if (parts.Length > 0) {
@@ -116,7 +167,7 @@ namespace CalcolatriceCreativa
             TXB_equation.Text = equation;
         }
 
-        private void BTN_CANC_Click(object sender, RoutedEventArgs e)
+        private void BTN_CANC_Click(object sender, RoutedEventArgs e) //Cancella l'ultimo input
         {
             string newEquation = "";
             for (int i = 0; i < equation.Length-1; i++) {
@@ -141,7 +192,7 @@ namespace CalcolatriceCreativa
             MessageBox.Show("Non ho voglia di programmarlo sinceramente");
         }
 
-        private void BTN_EQU_Click(object sender, RoutedEventArgs e)
+        private void BTN_EQU_Click(object sender, RoutedEventArgs e) //Output del risultato
         {
             if (equation[equation.Length-1] =='+' && equation[equation.Length-1]=='-' && equation[equation.Length - 1] == '.')
             {

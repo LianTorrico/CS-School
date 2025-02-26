@@ -1,0 +1,13 @@
+﻿<Window x:Class="ComparaMetodiSort.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComparaMetodiSort"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF170505">
+    <Grid>
+        <Button Content="3 Methods" HorizontalAlignment="Center" Click="All3_Click" VerticalAlignment="Center" Width="142" Height="60" Background="#FF502E2E" Foreground="#FFADADAD" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
