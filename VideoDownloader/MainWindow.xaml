@@ -1,0 +1,14 @@
+﻿<Window x:Class="YoutubeDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YoutubeDownloader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF381A1A">
+        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" Width="200" Click="Button_Click"/>
+        <TextBox Name="TBX_Url" HorizontalAlignment="Center" Margin="0,115,0,0" TextWrapping="Wrap" Text="Inserire un Link" VerticalAlignment="Top" Width="200" Height="32" Background="#FFB11919" Foreground="#FFCAA520"/>
+
+    </Grid>
+</Window>
