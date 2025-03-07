@@ -19,12 +19,17 @@ namespace memory
     public partial class MainWindow : Window
     {
         DispatcherTimer timer;
-
+        private int[] cards = {1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8};
         public MainWindow()
         {
             InitializeComponent();
+            Shuffle<Int32>(cards);
             timer = new DispatcherTimer();
             timer.Start();
+
+        }
+        private void GameConf()
+        {
 
         }
         private static void Shuffle<T>(T[] array)
@@ -38,6 +43,11 @@ namespace memory
                 int r = random.Next(i, array.Length);
                 (array[r], array[i]) = (array[i], array[r]);
             }
+        }
+
+        private void BTN_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

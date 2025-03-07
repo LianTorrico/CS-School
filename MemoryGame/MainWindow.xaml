@@ -12,22 +12,22 @@
         </Grid.Background>
 
         <UniformGrid Columns="4" Margin="101,0,101,0" RenderTransformOrigin="0.505,0.502">
-            <Button x:Name="BTN_1" Content=""></Button>
-            <Button x:Name="BTN_2" Content=""/>
-            <Button x:Name="BTN_3" Content=""/>
-            <Button x:Name="BTN_4" Content=""/>
-            <Button x:Name="BTN_5" Content=""/>
-            <Button x:Name="BTN_6" Content=""/>
-            <Button x:Name="BTN_7" Content=""/>
-            <Button x:Name="BTN_8" Content=""/>
-            <Button x:Name="BTN_9" Content=""/>
-            <Button x:Name="BTN_10" Content=""/>
-            <Button x:Name="BTN_11" Content=""/>
-            <Button x:Name="BTN_12" Content=""/>
-            <Button x:Name="BTN_13" Content=""/>
-            <Button x:Name="BTN_14" Content=""/>
-            <Button x:Name="BTN_15" Content=""/>
-            <Button x:Name="BTN_16" Content=""/>
+            <Button x:Name="BTN_1" Content="" Click="BTN_Click"></Button>
+            <Button x:Name="BTN_2" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_3" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_4" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_5" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_6" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_7" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_8" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_9" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_10" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_11" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_12" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_13" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_14" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_15" Content="" Click="BTN_Click"/>
+            <Button x:Name="BTN_16" Content="" Click="BTN_Click"/>
         </UniformGrid>
     </Grid>
 </Window>
